@@ -2,7 +2,8 @@ fastapi
 uvicorn
 pillow
 numpy==1.26.4
-opencv-contrib-python
+python-multipart
+opencv-python-headless
 scikit-learn
 scipy
 matplotlib
