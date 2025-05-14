@@ -7,21 +7,23 @@ from PIL import Image
 # Initialize FastAPI
 app = FastAPI()
 
-# Load Models
+
+# Load Models (relative paths for deployment)
 face_model = cv2.dnn.readNet(
-    r"C:/BACKUP NEVER DELETE/Desktop/Project/models/opencv_face_detector_uint8.pb",
-    r"C:/BACKUP NEVER DELETE/Desktop/Project/models/opencv_face_detector.pbtxt"
+    "models/opencv_face_detector_uint8.pb",
+    "models/opencv_face_detector.pbtxt"
 )
 
 gender_model = cv2.dnn.readNet(
-    r"C:/BACKUP NEVER DELETE/Desktop/Project/models/gender_net.caffemodel",
-    r"C:/BACKUP NEVER DELETE/Desktop/Project/models/gender_deploy.prototxt"
+    "models/gender_net.caffemodel",
+    "models/gender_deploy.prototxt"
 )
 
 age_model = cv2.dnn.readNet(
-    r"C:/BACKUP NEVER DELETE/Desktop/Project/models/age_net.caffemodel",
-    r"C:/BACKUP NEVER DELETE/Desktop/Project/models/age_deploy.prototxt"
+    "models/age_net.caffemodel",
+    "models/age_deploy.prototxt"
 )
+
 
 # Class Labels
 age_classes = ['(0-2)', '(4-6)', '(8-12)', '(15-20)', '(25-32)', '(38-43)', '(48-53)', '(60-100)']
@@ -89,3 +91,4 @@ async def predict(file: UploadFile = File(...)):
 
     except Exception as e:
         return {"error": str(e)}
+ 
