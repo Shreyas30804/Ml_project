@@ -3,7 +3,7 @@ import numpy as np
 import os
 
 # Image Path
-image_path = r"C:/BACKUP NEVER DELETE/Desktop/Project/women2.jpg"
+image_path = r"C:/BACKUP NEVER DELETE/Desktop/Project/man2.jpg"
 
 # Ensure Image Exists
 if not os.path.exists(image_path):
