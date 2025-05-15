@@ -22,6 +22,10 @@ git clone https://github.com/your-username/gender-age-detection-app.git
 
 [Download the APK here](https://we.tl/t-ytxVAewqbt?utm_campaign=TRN_TDL_09&utm_source=sendgrid&utm_medium=email&trk=TRN_TDL_09)
 
+## Project Report(Overleaf link) 
+
+https://www.overleaf.com/7459816132cwxrdnqjwnhj#04c0c0
+
 ## Usage
 
 1. Open the app.
